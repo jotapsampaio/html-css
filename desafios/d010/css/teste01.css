@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #66f361c9;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 200px;
+}
+
+ul li::before {
+    content: '✔';
+}
+
+#cabecalho {
+    background-image: linear-gradient(to top, #287537, #19752B, #29C247, #33F55A);
+    height: 150px;
+    color: white;
+}
+
+#cabecalho h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#primeiro {
+    margin: auto;
+    text-align: center;
+    width: 450px;
+}
+
+nav {
+    margin-bottom: 0;
+    margin-top: 25px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.11);
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+nav .menu:hover {
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+#principal { 
+    width: 1000px;
+    margin: auto;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article {
+    padding: 10px 20px;
+}
+article h2, h3 {
+    color: #287537;
+    font-family: 'android';
+    margin: 10px ;
+}
+
+h3 {
+    background-image: linear-gradient(to right, #29c24893, #33f55a0e);
+}
+
+article p {
+    text-indent: 30px;
+    margin: 10px 0;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#video {
+    background-color: #19752B;
+    height: 400px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#ultimo { 
+    background-color: #63e67de1;
+    margin: 0 20px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+#ultimo p {
+    padding-left: 20px;
+}
+
+h4 {
+    color: white;
+    background-color: #36b950;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#lista {
+    display: flex;
+    margin-left: 20px;
+}
+
+aside {
+    padding: 30px 20px;
+    text-indent: 30px;
+}
+
+footer {
+    background-color: #287537;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lista {
+    color: black;
+}
+
+a {
+    color: rgb(12, 180, 12);
+    text-decoration: none;
+}
+
+a::after {
+    content: '✧';
+}

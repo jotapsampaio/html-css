@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            background-color: pink;
+        }
+
+
+        .especial {
+            background-color: rgb(198, 241, 241);
+        }
+
+        .especial::before {
+            content: "❥";
+        }
+
+        .especial::after {
+            content: "❡";
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Instagram <a href="https://www.instagram.com/?hl=pt-br" target="_blank" rel="external" class="especial">acesse aqui.</a></li>
+        <li>Facebook <a href="https://www.facebook.com/kjoaopaulo.sampaio/" target="_blank" rel="external" class="especial"> acesse aqui.</a></li>
+        <li> GitHub <a href="https://github.com/jotapsampaio" target="_blank" rel="external" class="especial"> acesse aqui.</a></li>
+    </ul>
+</body>
+</html>

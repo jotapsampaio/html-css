@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounps Tags Semânticas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 0 10px;
+            display: inline;
+        }
+
+        header {
+            background-color: white;
+            margin: 10px 30px;
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.322);
+        }
+
+        header > h1 {
+            text-align: center;
+            color: brown;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color:rgb(43, 226, 125);
+        }
+
+        header nav a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: azure;
+            margin: 0 30px;
+            border-radius: 10px;
+        }
+
+        #primeiro {
+            background-color: aqua;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.288);
+        }
+
+        #primeiro article {
+            display: flex;
+        }
+
+        #primeiro aside {
+            text-align: right;
+            color: blue;
+            border-top-right-radius: 10px;
+        }
+
+        footer {
+            background-color: rgba(19, 18, 18, 0.74);
+            color: white;
+            padding: 3px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Primeiro Esquema de Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Articos</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Imagens</a></li>
+                <li><a href="#">Templates</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="primeiro">
+            <article>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est in magni quae laudantium unde corrupti blanditiis enim laboriosam cumque, odio nobis mollitia, tenetur, soluta dolore perspiciatis iste numquam quaerat sint?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis numquam, iure laudantium consequuntur accusantium? Cupiditate praesentium expedita, in, fuga mollitia vitae saepe illo ut ex error dolorem perferendis at!</p>
+                <aside>
+                    João Paulo Sampaio - 19/08/2022.
+                </aside>
+                <aside>
+                    <img src="image/foto.png" alt="foto" width="190px">
+                </aside>
+            </article>
+        </section>
+        <section id="segundo">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cupiditate ad doloremque quisquam vero eligendi blanditiis? Expedita, commodi, sapiente inventore veniam illum voluptas nemo sit quis beatae aut mollitia odit?</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por mim - João Paulo Sampaio</p>
+    </footer>
+</body>
+</html>
