@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+
+    <style>
+        body {
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .quadrado {
+            display: inline-block;
+            background-color: gray;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 5px;
+        }
+
+        #q1 {
+            background-color: skyblue;
+        }
+
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+
+        #q3 {
+            background-image: url('image/pattern003.png');
+        }
+
+        #container {
+            border: 1px solid red;
+            width: 300px;
+            height: 300px;
+            /* background-color: black;
+            background-image: url('image/pattern002.png');
+            background-position: center center;
+            background-repeat: repeat;
+            background-attachment: fixed; */
+            background: black url('image/pattern002.png') center center repeat fixed;
+        }
+
+        #fora {
+            height: 96vh;
+            background-color: #BD7DF5;
+            position: relative
+        }
+
+        #dentro {
+            height: 200px;
+            width: 300px;
+            background-color: #F5FF5B;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }   
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+    </div>
+
+    <div id="container"></div>
+    <div id="fora">
+        <div id="dentro">
+        </div>
+    </div>
+</body>
+</html>
