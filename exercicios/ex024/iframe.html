@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de iframe</title>
+    <style>
+        /* As configurações do iframe no css tem maior impacto do que os parametros usados na própria linha no html*/
+        iframe {
+            height: 500px;
+            width: 500px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exercícios de iframes para testar as suas funcionalidades.
+    </h1>
+    <p>
+        <!--O iframe por padrão te, tamanhos de 300x150 (width, height)-->
+        Estou aprendendo HTML e CSS pelo site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="400px">
+            <a href="https://www.cursoemvideo.com">Curso em Video</a>
+        </iframe>
+        do professor Gustavo Guanabara. 
+    </p>
+
+    <p>
+        Acessando o site do 
+        <iframe src="https://www.google.com" frameborder="0" height="300px" width="300px">
+            <a href="https://www.google.com">Google</a>
+        </iframe>
+        como forma de teste para ver site que recusam essa função. 
+    </p>
+</body>
+</html>
