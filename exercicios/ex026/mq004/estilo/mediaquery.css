@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* Configurações das outras medias quereis */
+
+
+/* Types de BreakPoints
+--------------------------
+- Dispositivos moóveis: 320px - 480px;
+- Tablets: 481px - 768px;
+- Telas pequenas e laptops: 769px - 1024px;
+- Desktops e telas grandes: 1025px - 1200px;
+- Telas muitos grandes e TVs: Acima de 1201px.
+*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) { /*Tablet*/
+    body {
+        background: url('../imagens/back-tablet.jpg');
+    }
+
+    main {
+        width: 480px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #laptop {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media print { /*Impressoara*/
+    body {
+        background: url('../imagens/back-print.jpg'); /*Nesse caso é desnecessário por que não podemos imprimir um background*/
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        color: black;
+        box-shadow: none;
+    }
+
+    main::after {
+        content: 'Esse conteúdo foi produzido por João Paulo Sampaio programador LTDA.';
+        text-decoration: overline;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #laptop {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /*laptop*/
+    body {
+        background: url('../imagens/back-laptop.jpg');
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #laptop {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){ /*pc*/
+    body {
+        background: url('../imagens/back-pc.jpg');
+    }
+
+    main {
+        width: 1000px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #laptop {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1201px) { /*tv*/
+    body {
+        background: url('../imagens/back-tv.jpg');
+    }
+
+    main {
+        width: 1100px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #laptop {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
