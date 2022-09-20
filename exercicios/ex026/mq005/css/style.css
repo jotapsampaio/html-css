@@ -17,6 +17,7 @@ header {
 header h1 {
     text-align: center;
     padding: 10px;
+    text-transform: uppercase;
 }
 
 #burquer {
@@ -49,6 +50,7 @@ header a {
     background-color: rgb(75, 72, 72);
     color: white;
     border: 1px solid gray;
+    margin-left: 10px;
 }
 
 header a:hover {
@@ -59,7 +61,8 @@ main {
     background-color: white;
     width: 90vw;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
 }

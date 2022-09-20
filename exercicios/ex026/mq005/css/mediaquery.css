@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Types de BreakPoints
+--------------------------
+- Dispositivos moóveis: 320px - 480px;
+- Tablets: 481px - 768px;
+- Telas pequenas e laptops: 769px - 1024px;
+- Desktops e telas grandes: 1025px - 1200px;
+- Telas muitos grandes e TVs: Acima de 1201px.
+*/
+
+@media screen and (min-width: 768px) {
+    #burquer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
